@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from "react";
 
-const ContactForm = () =>{
+const ContactForm = (props) =>{
     const initialFieldvalues = {
     fullName:'',
     mobile: '',
@@ -18,6 +18,7 @@ const handleInputChange = e => {
 }
 const handleFormSubmit = e =>{
     e.preventDefault();
+     props.addOrEdit(values)
 }
     return(
         <form autoComplete="off"onSubmit={handleFormSubmit}>
