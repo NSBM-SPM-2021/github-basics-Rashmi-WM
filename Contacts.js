@@ -3,6 +3,9 @@ import ContactForm from "./ContactForm";
 
 
 const Contacts = () =>{
+     const addOrEdit =obj=>{
+
+    }
     return(
         <React.Fragment>
         <div class="jumbotron jumbotron-fluid">
@@ -14,7 +17,7 @@ const Contacts = () =>{
 
 <div className="row">
     <div className="col-md-5"> 
-    <ContactForm/>
+    <ContactForm addOrEdit={addOrEdit}/>
     </div>
     <div className="col-md-7">
         <div>List of Contacts</div>
