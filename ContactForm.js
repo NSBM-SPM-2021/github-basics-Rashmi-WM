@@ -16,8 +16,11 @@ const handleInputChange = e => {
         [name]:value
     })
 }
+const handleFormSubmit = e =>{
+    e.preventDefault();
+}
     return(
-        <form autoComplete="off">
+        <form autoComplete="off"onSubmit={handleFormSubmit}>
             <div className="form-group input-group">
                 <div className="input-group-prepend">
                     <div className="input-group-text">
