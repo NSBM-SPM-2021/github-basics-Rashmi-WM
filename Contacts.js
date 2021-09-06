@@ -65,7 +65,8 @@ value={address}
         onChange={(e) => setAddress(e.target.value)}>
             </textarea>
         
-        <button type="Add Contacts" >
+        <button type="Add Contacts" 
+style={{ background: loader ? "#ccc" : " rgb(2, 2, 110)" }}>
       Add Contacts
       </button>
          </form>
