@@ -4,7 +4,7 @@ import { db } from "../firebase";
 
 
 
-const Contact= () =>{
+const Contacts= () =>{
     
     return(
          <form className="form">
@@ -21,11 +21,15 @@ const Contact= () =>{
 
           <label>Address</label>
       <textarea placeholder="address"></textarea>
+        
+        <button type="Add Contacts" >
+      Add Contacts
+      </button>
          </form>
          );
 };
 
-export default Contact;
+export default Contacts;
          
          
   
