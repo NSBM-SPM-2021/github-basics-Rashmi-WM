@@ -1,3 +1,5 @@
+//Please ignore this file//
+
 import *as firebase from "firebase";
 
 var firebaseConfig = {
