@@ -1,30 +1,34 @@
 import React from "react";
-import ContactForm from "./ContactForm";
 
 
-const Contacts = () =>{
-     const addOrEdit =obj=>{
 
-    }
-    return(
-        <React.Fragment>
-        <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4 text-center ">Contact Register</h1>
+const Contact= () =>{
     
-  </div>
-</div>
-
-<div className="row">
-    <div className="col-md-5"> 
-    <ContactForm addOrEdit={addOrEdit}/>
-    </div>
-    <div className="col-md-7">
-        <div>List of Contacts</div>
-    </div>
-</div>
-</React.Fragment>
+    return(
+         <form className="form">
+      <h1>Contact Manager</h1>
         
-    );
-}
-export default Contacts;
+          <label> Name</label>
+      <input placeholder=" Full Name"/>
+
+      <label> Email</label>
+      <input placeholder="Email"/>
+
+<label>Mobile</label>
+      <input placeholder="Mobile"/>
+
+          <label>Address</label>
+      <textarea placeholder="address"></textarea>
+         </form>
+         );
+};
+
+export default Contact;
+         
+         
+  
+
+    
+        
+        
+    
