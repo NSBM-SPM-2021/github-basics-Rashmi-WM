@@ -1,3 +1,6 @@
+//Please ignore this file//
+
+
 import Contacts from './Components/Contacts';
 
 function App() {
