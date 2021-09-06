@@ -1,15 +1,16 @@
-import *as firebase from "firebase";
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
 
-var firebaseConfig = {
-    apiKey: "AIzaSyAStmeaQUKl4sGGVfxSET9lhQbJTUIwcBM",
-    authDomain: "contact-app-e9ff0.firebaseapp.com",
-    databaseURL: "https://contact-app-e9ff0-default-rtdb.firebaseio.com",
-    projectId: "contact-app-e9ff0",
-    storageBucket: "contact-app-e9ff0.appspot.com",
-    messagingSenderId: "166997229374",
-    appId: "1:166997229374:web:81e4b61b33c632324f366f"
-  };
-  
-  // Initialize Firebase
-  var fireDb=firebase.initializeApp(firebaseConfig);
- export default fireDb.database().ref();
+
+var firebaseApp = firebase.initializeApp ({
+    apiKey: "AIzaSyBwYqnRTlLqthR5wIgQkrNHjwprTOpTKpM",
+    authDomain: "react-contact-app-28f96.firebaseapp.com",
+    projectId: "react-contact-app-28f96",
+    storageBucket: "react-contact-app-28f96.appspot.com",
+    messagingSenderId: "104524223909",
+    appId: "1:104524223909:web:145bee688c6c871e8b444c"
+});
+
+var db = firebaseApp.firestore();
+
+export {db};
